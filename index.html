@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Animation Testing</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        animation-name: colorfade;
+        position: relative;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 2s;
+      }
+      @keyframes colorfade {
+        0% {
+          background-color: blue;
+          left: 0px;
+          top: 0px;
+          width: 200px;
+          height: 200px;
+        }
+        25% {
+          background-color: cyan;
+        }
+        50% {
+          background-color: blueviolet;
+          left: 500px;
+          top: 0px;
+          width: 100px;
+          height: 100px;
+          border-radius: 100%;
+        }
+        75% {
+          background-color: cyan;
+        }
+        100% {
+          background-color: blue;
+          left: 0px;
+          top: 0px;
+          width: 200px;
+          height: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      CSS Animation
+    </h1>
+    <div></div>
+  </body>
+</html>
